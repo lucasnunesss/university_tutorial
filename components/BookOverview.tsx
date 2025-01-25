@@ -12,7 +12,9 @@ const BookOverview = async ({  title,
   description,
   coverColor,
   coverUrl,
-  id,}: Book) => {
+  id,
+  isLoanedBook = false
+  }: Book) => {
   return (
       <section className="book-overview">
         <div className="flex flex-1 flex-col gap-5">
